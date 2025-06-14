@@ -1,6 +1,7 @@
+import 'react-native-gesture-handler';
+
 import React from 'react';
 import { Dashboard } from './src/screens/Dashboard';
-
 import { ThemeProvider } from 'styled-components';
 import theme from './src/global/styles/theme';
 import AppLoading from 'expo-app-loading'
@@ -12,6 +13,9 @@ import {
   Poppins_900Black,
 } from '@expo-google-fonts/poppins'
 
+import { NavigationContainer } from '@react-navigation/native';
+
+import { AppRoutes } from './src/routes/app.routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -25,9 +29,10 @@ if (!fontsLoaded){
 }
 
   return (
-    <ThemeProvider theme={theme}
-    >
-       <Dashboard />
+    <ThemeProvider theme={theme}>
+       <NavigationContainer>
+        <AppRoutes />
+       </NavigationContainer>
     </ThemeProvider>
    
   );

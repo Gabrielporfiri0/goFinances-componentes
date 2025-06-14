@@ -90,5 +90,5 @@ export const Text = styled.Text`
 `
 
 export const TransactionList = styled.FlatList`
-
+margin-left: 15px;
 `
