@@ -15,7 +15,7 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 
-import { AppRoutes } from './src/routes/app.routes';
+import { AppRoutes } from './src/Routes/app.routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({

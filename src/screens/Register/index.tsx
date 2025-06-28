@@ -12,6 +12,10 @@ export function Register(){
 
         <Form>
         <Input
+        placeholder="Nome"
+        />     
+
+        <Input
         placeholder="Valor"
         />     
         </Form>
